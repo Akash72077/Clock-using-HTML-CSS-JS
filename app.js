@@ -1,10 +1,10 @@
 const hourEl= document.querySelector(".hour");
-const minuteEl= document.querySelector(".minutes");
+const minuteEl= document.querySelector(".minutes");  
 const secondEl= document.querySelector(".seconds");
 
 function updateClock(){
     const currentDate= new Date();
-    setTimeout(updateClock, 1000);
+    setTimeout(updateClock, 1000); // for each second it updates the time 
 const hour = currentDate.getHours();    
 const minutes = currentDate.getMinutes();    
 const seconds = currentDate.getSeconds();    
@@ -18,5 +18,5 @@ secondEl.style.transform= `rotate(${secondDeg}deg)`;
     
 }
 
-
+// Function to update clock
 updateClock();
